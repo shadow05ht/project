@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="nerv logo.jpg" type="image/x-icon">
+  <style>
+    ::selection {
+      background-color: black;
+      color: gold;
+    }
+
+    .i {
+      color: white;
+    }
+
+    .i:hover {
+      transition: .8;
+      text-shadow: 5px 5px 15px gold;
+    }
+
+    .l {
+      color: white;
+    }
+
+    .w {
+      height: 60px;
+      width: 60px;
+    }
+  </style>
+  <title>NERV</title>
+</head>
+
+<!-- NAVBAR AND SCCROLLSPY -->
+
+<body class="bg-dark" data-bs-spy="scroll" data-bs-target="navbar">
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="nerv logo.jpg" alt="logo" class=" mx-3 w">NERV</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Qrup">Qrup üzvləri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Imtahan">İmtahan nəticələri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Haqqinda">Haqqimizda</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button type="button" class="btn btn-warning dropdown-toggle mx-2 my-2" data-bs-toggle="dropdown"
+                aria-expanded="false" data-bs-auto-close="outside">
+                Qeydiyyat
+              </button>
+              <form action="https://google.az" method="post" class="dropdown-menu p-4 bg-dark">
+                <div class="mb-3">
+                  <label for="email" class="form-label l">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="email2" class="form-label l">Password</label>
+                  <input type="password" class="form-control" id="email2" placeholder="Password">
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="ckeck">
+                    <label class="form-check-label l" for="check">
+                      Save
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-warning">Sign in</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CAROUSEL -->
+  <div id="carouselExampleIndicators" class="my-4 container carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner " id="Home">
+      <div class="carousel-item active">
+        <img src="1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="1.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <h1 class="text-center my-2 text-white i">NERV GROUP</h1>
+  <p class="mx-3 my-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sequi veniam
+    asperiores
+    inventore rem error,
+    libero odit sunt omnis natus dolor labore voluptatem recusandae mollitia, architecto nulla illum. Animi, corrupti.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat cum expedita deleniti voluptates perferendis
+    tempore vero necessitatibus dolorum laboriosam libero nulla sapiente eum, praesentium magnam saepe qui quo ipsum
+    officia?
+  </p>
+
+
+  <div id="Qrup">
+
+    <!-- TABLE -->
+    <p class="display-3 text-white text-center my-5 i">Qrup üzvləri</p>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Elmir</td>
+            <td>Qasimzade</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Feyzullayev</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Toghrul</td>
+            <td>Huseynli</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Leman</td>
+            <td>Askerova</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Dinara</td>
+            <td>Osadchaya</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Khayal</td>
+            <td>Mansimov</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Zakir</td>
+            <td>Kazimzade</td>
+            <td>16</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ACCORDION -->
+    <div class="container">
+      <div class="accordion bg-dark" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Zakir
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <img src="zakir.jpg" alt="" style="height: 200px;width: 200;">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+              plugin
+              adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Toghrul
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <img src="Toghrul.jpg" alt="" style="width: 200;height: 300px;">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Kamal
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <img src="Kamal.jpg" alt="" style="width: 200;height: 250px;">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin
+              adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Khayal
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <img src="Khayal.jpg" alt="" style="width: 200; height: 200px;">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+              plugin
+              adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Dinara
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <img src="dinara1.jpg" alt="" style="width: 200; height: 200px;">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+              plugin
+              adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Leman
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <img src="Ləman.jpg" alt="" style="width: 200; height: 200px;">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+              plugin
+              adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Elmir
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <img src="Elmir.jpg" alt="" style="width: 200; height: 200px;">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+              plugin
+              adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- IMTAHAN NETICELERI -->
+  <h2 class="text-center my-3 i" id="Imtahan">Imtahan nəticələri</h2>
+  <div class="container my-5">
+    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+      aria-valuemax="100">
+      <div class="progress-bar bg-success" style="width: 25%">Dinara-25%</div>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
+      aria-valuemax="100">
+      <div class="progress-bar bg-info text-dark" style="width: 50%">Toghrul-50%</div>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0"
+      aria-valuemax="100">
+      <div class="progress-bar bg-warning text-dark" style="width: 75%">Kamal-75%</div>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0"
+      aria-valuemax="100">
+      <div class="progress-bar bg-danger" style="width: 100%">Elmir-100%</div>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+      aria-valuemax="100">
+      <div class="progress-bar bg-success" style="width: 25%">Xeyal-25%</div>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
+      aria-valuemax="100">
+      <div class="progress-bar bg-info text-dark" style="width: 50%">Zakir-50%</div>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0"
+      aria-valuemax="100">
+      <div class="progress-bar bg-warning text-dark" style="width: 75%">Leman-75%</div>
+    </div>
+  </div>
+
+  <div id="Haqqinda">
+    <!-- CARD -->
+    <h2 class="text-center my-3 i">Haqqımızda</h2>
+    <div class="card-group mx-3">
+      <div class="card" style="width: 18rem;">
+        <img src="Elmir.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Elmir Qasimzade</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, aliquam expedita porro provident doloribus qui itaque totam nostrum ea deleniti. Doloremque magni dignissimos similique tempore impedit blanditiis at exercitationem ad.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                    second modal</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, aliquam expedita porro provident doloribus qui itaque totam nostrum ea deleniti. Doloremque magni dignissimos similique tempore impedit blanditiis at exercitationem ad.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+                    first</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Elmir</button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="Zakir.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Zakir Kazimzade</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium inventore animi asperiores illo nemo quis! Modi a fugiat quidem maiores iure ullam quia laudantium? Est quisquam saepe eum sequi rem.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                    second modal</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium inventore animi asperiores illo nemo quis! Modi a fugiat quidem maiores iure ullam quia laudantium? Est quisquam saepe eum sequi rem.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+                    first</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Zakir</button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="dinara1.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Dinara Osadchaya</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illo repudiandae commodi cumque, voluptatibus, sed quo esse eaque quasi, voluptates sapiente. Repudiandae vel quos voluptatum accusamus nostrum, cumque blanditiis natus.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                    second modal</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illo repudiandae commodi cumque, voluptatibus, sed quo esse eaque quasi, voluptates sapiente. Repudiandae vel quos voluptatum accusamus nostrum, cumque blanditiis natus.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+                    first</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Dinara</button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="Ləman.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Leman Askerova</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ad magnam eum, ex laudantium maxime quae necessitatibus soluta tenetur atque aspernatur optio cumque pariatur quis consequatur iusto obcaecati placeat quisquam!
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                    second modal</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam eligendi minima quos veniam commodi facilis, consequatur asperiores accusantium unde aliquam ex. Debitis quasi iure voluptates ad neque qui! Quisquam, facilis.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+                    first</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Laman</button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="Toghrul.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Toghrul Huseynli</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aspernatur accusantium perferendis nihil facere, minus sed labore molestiae eum distinctio commodi eaque sapiente accusamus excepturi iusto repudiandae natus tempore veniam.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                    second modal</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores magnam dolor itaque a aperiam perspiciatis, ut, possimus ab reiciendis cupiditate natus voluptatibus modi quod fugit vel beatae sint recusandae? Molestiae.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+                    first</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Toghrul</button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="Kamal.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Kamal Feyzullayev</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae maxime, reprehenderit aut cumque alias saepe accusamus doloremque esse nemo aliquam. Laudantium quasi dolore cupiditate alias mollitia adipisci natus. Ab, harum.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                    second modal</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ex voluptatum aliquam sapiente culpa in amet exercitationem nam pariatur magnam nisi dolorem aspernatur, perferendis doloremque expedita illum itaque sunt debitis!
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+                    first</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Kamal</button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="Khayal.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Xayal Mansimov</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex cum facilis laudantium aliquam maiores nulla maxime, debitis tenetur consequatur labore explicabo error, quidem dolore nam ad mollitia optio. Suscipit, a.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                    second modal</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorem ea hic accusamus dicta minima, explicabo libero tempore quibusdam nostrum excepturi veritatis? Repellat necessitatibus obcaecati veritatis voluptas, laborum delectus dignissimos?
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+                    first</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Xayal</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <br><br><br>
+  <!-- FOOTER -->
+  <nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-bottom">
+    <p class="text-white mx-auto my-auto f">
+      Design by Toghrul &copy; 2023
+    </p>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
